@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
 import "@radix-ui/themes/styles.css";
-import { Theme, ThemePanel } from "@radix-ui/themes";
+import { Container, Theme, ThemePanel } from "@radix-ui/themes";
 import "../theme-config.css";
 import NavBar from "./NavBar";
 
@@ -28,7 +28,7 @@ export default function RootLayout({
       <body className={poppins.variable}>
         <Theme accentColor="violet">
           <NavBar />
-          <main>{children}</main>
+          <Container>{children}</Container>
         </Theme>
       </body>
     </html>
