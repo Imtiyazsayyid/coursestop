@@ -1,6 +1,5 @@
 import { Button, Flex, Text } from "@radix-ui/themes";
 import Link from "next/link";
-import React from "react";
 import { RiGraduationCapFill } from "react-icons/ri";
 
 const links = [
@@ -19,6 +18,7 @@ const NavBar = () => {
         height={"9"}
         align={"center"}
         justify={"between"}
+        width={"100%"}
       >
         <Flex align={"center"} gap={"3"}>
           <RiGraduationCapFill />

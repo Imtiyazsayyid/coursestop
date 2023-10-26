@@ -4,6 +4,7 @@ import "./globals.css";
 import "@radix-ui/themes/styles.css";
 import { Theme, ThemePanel } from "@radix-ui/themes";
 import "../theme-config.css";
+import NavBar from "./NavBar";
 
 const poppins = Poppins({
   weight: ["300", "400", "500", "600", "700", "800", "900"],
@@ -25,7 +26,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.variable}>
-        <Theme accentColor="violet">{children}</Theme>
+        <Theme accentColor="violet">
+          <NavBar />
+          <main>{children}</main>
+        </Theme>
       </body>
     </html>
   );
